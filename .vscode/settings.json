@@ -1,0 +1,13 @@
+{
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+      },
+      "emmet.triggerExpansionOnTab": true,
+      "editor.snippetSuggestions": "top",
+      "editor.wordWrap": "on",
+      "files.autoSaveDelay": 5,
+      "files.autoSave": "onFocusChange",
+      "editor.fontSize": 16,
+      "window.openFilesInNewWindow": "on",
+}
