@@ -12,7 +12,6 @@ const person = (props) => {
                 {props.age}
                 years old
             </p>
-            {/* <p>{propsRecieved.children}</p> */}
             <input type="text" onChange={props.nameChange} value={props.name} />
         </div>
     );
