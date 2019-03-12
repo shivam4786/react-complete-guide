@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import Classes from './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -118,7 +118,7 @@ class App extends Component {
       cursor: 'pointer'
     }
     return (
-      <div className="App">
+      <div className={Classes.App}>
         <h1>Hello React</h1>
         <button 
           style={style} 
