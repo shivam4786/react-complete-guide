@@ -40,7 +40,7 @@
           "react/prop-types": [0],
           "react/destructuring-assignment": [0],
           "skipBlankLines": true,
-          "react/jsx-one-expression-per-line": [1, { "allow": "none literal single-child"}]
+          "react/jsx-one-expression-per-line": [1, { "allow": "literal"}]
     }
     
 }
