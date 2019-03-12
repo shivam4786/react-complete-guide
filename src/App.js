@@ -113,13 +113,8 @@ class App extends Component {
       cursor: 'pointer'
     }
     return (
-<<<<<<< HEAD
       <div className={Classes.App}>
         <h1>Hello React</h1>
-=======
-      <div className="App">
-        <h1 className={classes.join(' ')}>Hello React</h1>
->>>>>>> e448ded0aa10a542fe39340bad2012f7b651d6f6
         <button 
           style={style} 
           onClick={this.btnClickHandler}>Toggle Persons </button>
