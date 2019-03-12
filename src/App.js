@@ -47,7 +47,6 @@ class App extends Component {
   }
 
   deletePersonHandler = (personIndex) => {
-    console.log('Deleting Person', personIndex);
     const personsDup = [...this.state.persons];
     personsDup.splice(personIndex, 1);
     this.setState({
@@ -56,32 +55,19 @@ class App extends Component {
   }
 
   nameChangeHandler = (e, id) => {
-    console.log(this.state.persons);
     const personIndex = this.state.persons.findIndex((p) => {
       return (p.id === id);
     });
 
-    console.log(personIndex);
-
     const personsDup = [...this.state.persons];
-
-    console.log(personsDup);
-
+    
     const targetPerson = personsDup[personIndex];
 
-    console.log(targetPerson);
-
-    console.log(targetPerson.name);
-
     targetPerson.name = e.target.value;
-
-    console.log(targetPerson.name);
 
     this.setState({
       persons: personsDup
     });
-
-    console.log(this.state.persons);
   }
 
   btnClickHandler = () => {
@@ -91,8 +77,17 @@ class App extends Component {
   }
 
   render() {
-
     let persons = null;
+    
+    let classes = [];
+
+    if(this.state.persons.length <= 2){
+      classes.push('red');
+    }
+
+    if(this.state.persons.length <= 1){
+      classes.push('bold');
+    }
 
     if(this.state.showPersons){
       persons = (
@@ -118,11 +113,16 @@ class App extends Component {
       cursor: 'pointer'
     }
     return (
+<<<<<<< HEAD
       <div className={Classes.App}>
         <h1>Hello React</h1>
+=======
+      <div className="App">
+        <h1 className={classes.join(' ')}>Hello React</h1>
+>>>>>>> e448ded0aa10a542fe39340bad2012f7b651d6f6
         <button 
           style={style} 
-          onClick={this.btnClickHandler}>Swich Names</button>
+          onClick={this.btnClickHandler}>Toggle Persons </button>
           {persons}
       </div>
     );
